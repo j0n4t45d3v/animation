@@ -1,0 +1,68 @@
+body{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 100px;
+    height: 300px;
+    position: relative;
+    background-color: black;
+    transition: 0.3s;
+    animation: rotacao 5s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes rotacao {
+    0%{
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+        background-color: #000;
+
+    }
+    
+    17.5%{
+        top: 350px;
+        left: 450px;
+        background-color: red;
+        
+    }
+    
+    32%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+        
+    }
+    43.5%{
+        top: -320px;
+        left: -450px;
+        background-color: yellow;
+    }
+    58%{
+        top: 350px;
+        left: -250px;
+        background-color: brown;
+    }
+    69.5%{
+        top: -320px;
+        left: 400px;
+        background-color: gray;
+    }
+    78%{
+        top: 0;
+        left: 0;
+    }
+    90.5%{
+        top: 350px;
+        left: 450px;
+        background-color: orange;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+}
