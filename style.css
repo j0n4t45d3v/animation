@@ -10,30 +10,39 @@ div{
     position: relative;
     background-color: black;
     transition: 0.3s;
-    animation: rotacao 5s infinite linear;
-    animation-delay: 2s;
+    animation: rotacao 3s infinite linear, rotacao1 .2s infinite linear;
+    animation-delay: 1s;
 }
+
+@keyframes rotacao1 {
+    0%{
+        transform: rotate(360deg);
+       
+
+    }
+}    
+   
 
 @keyframes rotacao {
     0%{
         top: 0;
         left: 0;
-        transform: rotate(360deg);
-        background-color: #000;
+       background-color: black;
+       
 
     }
     
     17.5%{
         top: 350px;
         left: 450px;
+     
         background-color: red;
-        
     }
     
     32%{
         top: 0;
         left: 0;
-        background-color: blue;
+        background-color: green;
         
     }
     43.5%{
@@ -44,21 +53,22 @@ div{
     58%{
         top: 350px;
         left: -250px;
-        background-color: brown;
+        background-color: gray;
     }
     69.5%{
         top: -320px;
         left: 400px;
-        background-color: gray;
+        background-color: purple;
     }
     78%{
         top: 0;
         left: 0;
+        background-color: rosybrown;
     }
     90.5%{
         top: 350px;
         left: 450px;
-        background-color: orange;
+        background-color: brown;
     }
     100%{
         top: 0;
